@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" type="image/png" sizes="32x32" href="image/favicon.png" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="css/animate.css/animate.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/popper.js@1.15.0/dist/umd/popper.min.js"></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/sweetalert2/dist/sweetalert2.all.min.js"></script>
+  </head>
+  <body>
+    <h1 class="head">Tic-Tac-Toe</h1>
+    <h3 class="sub">Get 3 "x"s or "o"s in a row.</h3>
+    <h3 id="msg"></h3>
+    <table id="board">
+      <tbody>
+        <tr>
+          <td id="cell00" onClick="JavaScript: clickCell(0,0);">&nbsp</td>
+          <td id="cell01" onClick="JavaScript: clickCell(0,1);">&nbsp</td>
+          <td id="cell02" onClick="JavaScript: clickCell(0,2);">&nbsp</td>
+        </tr>
+        <tr>
+          <td id="cell10" onClick="JavaScript: clickCell(1,0);">&nbsp</td>
+          <td id="cell11" onClick="JavaScript: clickCell(1,1);">&nbsp</td>
+          <td id="cell12" onClick="JavaScript: clickCell(1,2);">&nbsp</td>
+        </tr>
+        <tr>
+          <td id="cell20" onClick="JavaScript: clickCell(2,0);">&nbsp</td>
+          <td id="cell21" onClick="JavaScript: clickCell(2,1);">&nbsp</td>
+          <td id="cell22" onClick="JavaScript: clickCell(2,2);">&nbsp</td>
+        </tr>
+      </tbody>
+    </table>
+    <button type="button" onClick="Javascript: reset();">Reset</button>
+    <!-- <script defer src="js/sweetalert2/dist/sweetalert2.all.min.js"></script> -->
+    <script src="js/main.js"></script>
+    <!--Winning line-->
+    <!-- <svg style="width: 100%; height: 100%;">
+      <line
+        x1="0"
+        y1="100%"
+        x2="100%"
+        y2="0"
+        style="stroke:rgb(255, 255, 255);stroke-width:5"
+      />
+    </svg> -->
+  </body>
+</html>
