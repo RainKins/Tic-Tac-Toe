@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css?family=Overlock|Permanent+Marker');
+*, *::after, *::before {
+    box-sizing: content-box;
+}
+
+body {
+    background: linear-gradient(to bottom right, #80448d, #44548d);
+    background-size: 100%;
+    font-family: 'Permanent Marker', cursive;
+    height: 100%;
+    display: flex; 
+	/* overflow: hidden !important; */
+	max-width: 100%;	
+    margin: auto 0;
+    word-wrap: break-word;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: bounceIn;
+    animation-duration: 2s;
+    animation-iteration-count: initial;
+}
+
+h1, h3 {
+    text-align: center;
+    color: #f8f1f2;
+}
+
+.sub {
+    font-weight: 100;
+}
+
+table {
+    width: 60%;
+    border-collapse: collapse;
+}
+
+td {
+    text-align: center;
+    vertical-align: middle;
+    font-size: 7em;
+    width: 33.333%;
+    border: 10px solid #f8f1f2;
+}
+
+button {
+    background: rgba(59,173,227,1);
+    background: linear-gradient(45deg, rgba(59,173,227,1) 0%, rgba(87,111,230,1) 25%, rgba(152,68,183,1) 51%, rgba(255,53,127,1) 100%);
+    border: none;
+    color: #f8f1f2;
+    padding: 10px 30px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1em;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 16px;
+    border-color: #80448d;
+}
+
+/* td::before {
+    content: "";
+    display: block;
+    margin-top: 100%;
+} */
+
+td {
+    border: 10px solid #f8f1f2;
+}
+
+td:first-of-type {
+    border-left-color: transparent;
+    border-top-color: transparent;
+}
+
+td:nth-of-type(2) {
+    border-top-color: transparent;
+
+}
+
+td:nth-of-type(3) {
+    border-right-color: transparent;
+    border-top-color: transparent;
+    border-radius: 50%;
+}
+
+tr:nth-of-type(3) td {
+    border-bottom-color: transparent;
+}
+
+@media (max-width: 1000px) {
+    table {
+        width: 95%;
+    }
+}
+/* #board tr td:hover {
+    background: #e4e4e4;
+    cursor: pointer;
+} */
